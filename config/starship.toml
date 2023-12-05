@@ -1,0 +1,44 @@
+# Replace the "❯" symbol in the prompt with "❯❯"
+[character]
+success_symbol = "[🔥](normal)"
+error_symbol = "[☠️](normal)"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+# Disable the AWS module.
+[aws]
+disabled = true
+
+# Disable the GCP module.
+[gcloud]
+disabled = true
+
+# Set the time format
+[time]
+disabled = true
+time_format = "%H:%M"
+utc_time_offset = "+10"
+
+# Directory setttings
+[directory]
+format = "[$path]($style)[$read_only]($read_only_style) "
+truncate_to_repo = true
+
+[username]
+disabled = true
+
+[hostname]
+ssh_only = false
+format = ""
+
+# Workaround for slow prompt with git status
+[git_status]
+disabled = true
+
+
+[battery]
+full_symbol = '🔋 '
+charging_symbol = '⚡️ '
+discharging_symbol = '💀 '
